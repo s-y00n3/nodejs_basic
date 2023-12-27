@@ -13,9 +13,22 @@ router.get('/api/get/nodejs-api', function (req, res) {
   })
 })
 
+router.get('/api/get/demo', function(req, res) {
+  res.status(200).json({
+    "message" : "call get api demo"
+  })
+})
+
 router.post('/api/post/nodejs-api', function(req, res) {
   res.status(200).json({
     "message" : "post nodejs-api"
   })
 })
+
+router.post('/api/post/demo', function(req, res) {
+  res.status(200).json({
+    "message" : "call post api demo"
+  })
+})
+
 module.exports = router;
